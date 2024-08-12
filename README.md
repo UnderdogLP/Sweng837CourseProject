@@ -6,6 +6,10 @@
 [Non_Functional_Requirements.pdf](https://github.com/user-attachments/files/16577089/Non_Functional_Requirements.pdf)
 
 
+[Problem_Statement_and_Requirements.docx](https://github.com/user-attachments/files/16577228/Problem_Statement_and_Requirements.docx)
+
+
+[Non_Functional_Requirements.docx](https://github.com/user-attachments/files/16577222/Non_Functional_Requirements.docx)
 
 
 

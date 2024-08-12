@@ -1,75 +1,9 @@
-Environmental Monitoring and Prediction System
 
-Problem Statement and Requirements 
-Problem: Users want to know the status of the environment when they want to. Users want to be more informed of the various environmental impact that is happening around them. Users can use this information to determine where to volunteer, where to travel and visit, and where to move.
-
-Problem Solution: The system aims to solve the users need to know what the environmental conditions are. If the user wants to subscribe to predictions and alerts, the system will allow the user to do so. The system will aim to help users access environmental conditions based on already established probes in the air, water, and forests.
-
-The system functionalities will be: Air Quality, Water Quality, Forest Quality, Predictions, Ability to subscribe, and Ability to register as a user.
-
-The target users will be:
-- Young people: ages 15 – 25, male and female
-- The youth has a trend of caring for the environment and at that age they are able to be more proactive and this will help them to advocate for the environment.
-- People who travel: ages 25 – 35, male and female
-- People who travel are concerned about their health and safety, as well as their ability to make the most out of their travel experience. This will help them make informed decisions as to where to travel.
-- People looking to buy homes or move: ages 35 – 50, male and female	
-- People who are looking to move are looking to see if where they are moving to is a good location. 	Environmental factors are of concern, as they may not enjoy moving to a place where there are major 	environmental issues. Often, if they have kids or plan on having kids, they want a good environment.
-
-Business goals are that the system shall be able to give users a quick response to the information they request. The system shall be able to generate new registered users and subscribers. The system shall have a clean and easy to use interface to appeal to a large market.
-
-
-Non Functional Requirements 
-
-Performance Requirements: Scalability
--	100 concurrent users or 100 TPS: Vertical scaling can be used in this case. Vertical scaling involves adding more power to existing resources, like upgrading server CPU, RAM, and storage.
-
--	1000 concurrent users or 1000 TPS: Optimizing SQL database queries would be a good way to handle this increase in users. Indexing makes columns faster to query by creating pointers to where data is stored within a database. Caching stores data that is frequently accessed, and usually rarely changed, closer to end users. Can help reduce the load on the database and servers. It can also help improve latency which leads to a faster system. 
-
--	10k concurrent users or 3000 TPS: Horizontal scaling is when more hardware nodes are added to the system, like adding more servers. It is used instead of vertical scaling. If one server goes down, other servers can be used, making less downtime and less performance issues. Horizontal scaling is cost effective and helps application resilience. 
-
--	100k concurrent users: Cloud storage would be the best way to handle this many users. Cloud storage has data in various logical pools that are then distributed over a number of servers. This is perfect for large numbers of users or increased growth because the storage is there, and all that needs to be done is to buy more storage as needed. Load balancing software can also be used to help scalability at this size. 
-
-Performance Requirements: Response Time
--	The response time shall be within 100–500 milliseconds, as that is ideal for user experience.
-
--	One way to ensure this is through optimizing the database, which is improving the database and making sure that it can handle large amounts. This is done through close monitoring and testing.
-
--	Another way to ensure this is through configuring caching, which is storing data in a temporary location so it is faster to access next time it is called. This is done through monitoring and seeing which variables are called more than others.
+[Problem_Statement_and_Requirements.pdf](https://github.com/user-attachments/files/16577087/Problem_Statement_and_Requirements.pdf)
 
 
 
-
-Performance Requirements: Throughput
-Throughput is the amount of material or items (eg data) passing through the system.
-To make sure throughput is able to pass through the system, review the existing workflow and make sure that there are no issues with the amount of data. Eliminate bottlenecks by testing and seeing which areas cause bottlenecks and find solutions. Reduce equipment downtime by choosing reliable equipment and by making sure back up systems are in place. Reduce parts rejection rate by having quality control and eliciting feedback to ensure the customer is happy with the end product. Improve employee training so that everyone is on the same page as to what needs to be done. Use automation in testing as it makes it faster to test and find issues.
-
-Security Requirements: Authentication
- 
-In this case, HTTP is being used. HTTP is a secure application layer protocol that transfers information between devices on the network. It is used for communicating between clients and servers.
-
-Security Requirements: Authorization
-Role-based access control (RBAC): to differentiate between a guest and a registered user. RBAC assigns permissions to users based on their role within an organization and grants access based only on the role of the user within an organization.
-
-Security Requirements: Data Encryption
- 
-SSL/TLS certificates are electronic documents used to certify the ownership of a public key. They allow secure communications on networks. Servers present their certificates to clients during connections. Using encryption techniques to ensure data is protected when being sent and at rest. End-to-end encryption is one technique that would help the project become more secure. It keeps the messages more secure by keeping the message a secret from everyone, including the service.
-
-Maintainability Requirements: Code Modularity
-Code modularity involves dividing a system into smaller, independent modules or components, each with a specific function. This will be done through the use of UML Diagrams.
-
-Maintainability Requirements: Documentation
-Documenting code enhances readability, maintainability, and longevity, ultimately saving time, reducing errors, and improving overall software quality.
-Determine your audience, define the scope, use a standardized structure, write descriptive titles and explanations, document parameters and return values, document any changes made and when, have a backup.
-
-Maintainability Requirements: Testing Strategies
--	Front-End Testing Strategy: making sure everything looks and functions for the user
-
--	Static Testing Strategy. A static test evaluates the quality of a system without actually running the system
-
--	Cross-platform testing: testing across platforms to ensure application can be used by all
-
-
-
+[Non_Functional_Requirements.pdf](https://github.com/user-attachments/files/16577089/Non_Functional_Requirements.pdf)
 
 
 
@@ -77,6 +11,9 @@ Maintainability Requirements: Testing Strategies
 
  
 Use Case Diagram
+
+![1_UML_Use_Case_Diagram](https://github.com/user-attachments/assets/e477afa8-9284-4e35-9b5e-6ac877714555)
+
  
 
 The purpose of a use case diagram is to demonstrate the different ways that a user can interact with a system. It is a visual representation of the interactions between actors, users or external systems, and a system. It is used to show functionality of the system from a user point of view. In this case, a user can either be a registered user or a guest. Both can access air quality, water quality, forest quality, and check predictions. A registered user can subscribe to updates. A guest user can choose to create an account. The database stores login information from the user and subscription status. The database stores air quality, water quality, forest quality, and predictions. 
@@ -90,6 +27,7 @@ The purpose of a use case diagram is to demonstrate the different ways that a us
 
 Domain Model
  
+![2_UML_Domain_Model](https://github.com/user-attachments/assets/72c57fae-778d-4d75-8937-2a556ed5112d)
 
 
 A domain model is a graphical representation of ideas and how they flow in the system, and not software. Domain models show entities or things, and how they are related.  A domain model can tell us the relationships between entities. 
@@ -98,6 +36,8 @@ In the Environmental System entity, there is a user. The user can be a registere
  
 Class Diagram
   
+![3_UML_Class_Diagram](https://github.com/user-attachments/assets/bda3296b-ce26-4515-9fd5-1d21c10027e4)
+
 
 A class diagram shows the static structure of the system. It shows classes and the relationship between classes. It shows structural and behavioral features within a system.
 A guest has the option to create an account. When the guest creates an account, they enter a username and password, and verify the username and password. From there, they become a registered user. As a registered user, they have a username and password. A guest and a registered user both have the option to put in their location and view the environmental services. Location is verified. 
@@ -118,6 +58,9 @@ For the prediction, the prediction grabs water, air, and forest quality, puts it
 
 
 Sequence Diagram
+
+![4_UML_Sequence_Diagram](https://github.com/user-attachments/assets/55de1df9-0988-4750-ad35-b8905b63d0ef)
+
  
 A sequence diagram shows all the messages in a system. It is used to show the interactions between objects in the sequential order that those interactions occur. 
 In this environmental service system, there is a user. The user can login. The database validates the login. The user can subscribe to updates. The database confirms subscription status. The user can update their location. The database confirms the location. 
@@ -135,6 +78,7 @@ The user can request prediction. The database can tell if the location is bad, a
  
 State Diagram
  
+![5_UML_State_Diagram](https://github.com/user-attachments/assets/45556570-cd0e-4de1-85e5-8cf4abed7b9f)
 
 
 
@@ -159,6 +103,9 @@ From the environmental services home screen, there is a button to logout. If the
 
 
 Activity Diagram
+
+![6_UML_Activity_Diagram](https://github.com/user-attachments/assets/810d1235-1c23-4f47-97dc-7a50d6226365)
+
  
 An activity diagram shows the flow from one activity to another in a system. It can be used to understand the system and its components. It shows how a user can interact with the system, and the flow of the interactions.
 The user opens the application. From there, the user can continue as a guest or login. If the user logs in, the login is validated and the user continues. If the login is unable to validate, there is an error message. The guest can choose to register. If the registration credentials are valid, the user then becomes a registered user and continues.  If the registration credentials are invalid, an error message is shown. From there, the user can choose their location. The location is validated. If the location is invalid, an error message is shown. If the location is valid, the user continues to the environmental information chooser. 
@@ -175,6 +122,9 @@ After this, the user can return to the home screen. From there, the user can exi
 
  
 Component Diagram
+![7_UML_Component_Diagram](https://github.com/user-attachments/assets/7c494028-e7e0-4987-a892-86b8527ea9d7)
+
+
  
  
 Component diagrams are used to model the physical aspects of systems and focuses on essential elements. In my component diagram, the data which is the username and password, flow into the component through the ports on the right hand side. The option to continue as a guest is also on the right hand side. The username and password is converted into a format that the internal components can use. The data passes through the user database for validation. 
@@ -197,6 +147,8 @@ The prediction gets prediction details, and the output on the left hand side is 
 
  
 Deployment Diagram
+![8_Cloud_Deployment_Diagram](https://github.com/user-attachments/assets/5e8b7c58-1106-4ae4-8fa0-97653e3029f4)
+
   
 Deployment Diagrams are used to visualize the hardware processes of the system. It shows the communication and relationship between the different hardware components and the placement of software files on the hardware. For my deployment diagram, I assigned various hardware components based on previous diagrams. 
 The hardware and software components are: 
@@ -222,120 +174,11 @@ o The software components are the presentation server, database server, and envi
 o The software components are the .exe executable file, which allows users to install and use the application.
  
 Skeleton Classes 
-public class EnvironmentalService{
-    public static void main(String arg[]){
+![9a_Skeleton_Classes_Definition](https://github.com/user-attachments/assets/f3343750-9b9c-4971-ba19-bf12c9c670af)
 
-        continueAsGuest(Boolean)
-        login(Boolean)
-        airQuality(int)
-        waterQuality(int)
-        forestQuality(int)
-        prediction(String)
-        subscribe(Boolean)
-        logout(Boolean)
-        exitApp(Boolean)
-
-    }
-}
-private Boolean continueAsGuest(Boolean guest){
-    if guest = True:
-    return True
-    if guest = False:
-    return False
-}
-private Boolean login(String Username, String Password){
-    validateUsername()
-    validatePassword()
-    if(validateUsername = True && validatePassword = True){
-        return True
-    }
-    else{
-        return False
-    }
-}
-private Int airQuality(){
-    getAirQualityFromProbe(){
-        return airQualityRaw
-    }
-    readableAir(airQualityRaw){
-        return int readableAir(airQualityRaw)
-    }
-}
-private Int waterQuality(){
-    getWaterQualityFromProbe(){
-        return waterQualityRaw
-    }
-    readableWater(waterQualityRaw) {
-        return int readableWater(waterQualityRaw)
-    }
-}
-private Int forestQuality(){
-    getForestQualityFromProbe() {
-        return forestQualityRaw
-    }
-    readableForest(forestQualityRaw) {
-        return int readableForest(forestQualityRaw)
-    }
-}
-private String prediction(){
-    getAirQualityFromProbe(){
-        return airQualityRaw
-    }
-    getWaterQualityFromProbe(){
-        return waterQualityRaw
-    }
-    getForestQualityFromProbe(){
-        return forestQualityRaw
-    }
-    generatePrediction(airQualityRaw, waterQualityRaw, forestQualityRaw) {
-        //generate prediction algorithm
-        readableAir(predictedAirQualityRaw){
-            return int readableAir(predictedForestQualityRaw)
-        }
-        readableWater(predictedWaterQualityRaw){
-            return int readableWater(predictedWaterQualityRaw)
-        }
-        readableForest(predictedForestQualityRaw){
-            return int readableForest(predictedForestQualityRaw)
-        }
-        return String generatePrediction(readableAir + readableWater + readableForest)
-    }
-    private Boolean subscribe(Boolean subscribeYesOrNo){
-        if subscribeYesOrNo = True {
-            getUserUsername(username)
-            getUserUsernameVerify(username)
-            getUserPassword(password)
-            getUserPasswordVerify(password)
-            if (getUserUsername == getUserUsernameVerify) && (getUserPassword == getUserPasswordVerify){
-                return True
-            }
-		else{
-                return False
-            }
-	else{
-                return False
-            }
-        }
-
-        private Boolean logout(Boolean logoutYesOrNo){
-            if logoutYesOrNo = True {
-                removeUsername()
-                removePassword()
-            }
-            return True
-	else{
-                return False
-            }
-
-            private Boolean exitApp(Boolean exitAppYesOrNo){
-                if exitAppYesOrNo = True {
-                    closeApplication()
-                }
-                return True
-	else{
-                    return False
-                } 
 Skeleton Database
+![9b_Skeleton_Tables_Definition](https://github.com/user-attachments/assets/7d55365f-a814-4d4a-8c6c-448ca28a5894)
+
  
  
 A)	For the skeleton code, I thought of the main classes in the application. I then went and expanded on them to provide details and insights on how the classes would act. For the main class, there is: continueAsGuest(Boolean), login(Boolean), airQuality(int), waterQuality(int), forestQuality(int), prediction(String), subscribe(Boolean), logout(Boolean), and exitApp(Boolean). I then assigned functions to each class based on how the classes should act. 
@@ -358,6 +201,8 @@ B)	For the skeleton database, I thought of each table needed in the database and
 
 
 Design Patterns SOLID
+![10_Design_Patterns_SOLID](https://github.com/user-attachments/assets/bdd27a70-a16d-4aa7-bbe7-b0d4723441c9)
+
  
 S: A class should have one and only one reason to change, meaning that a class should have only one job. For my project, I made sure airQuality, waterQuality, and forestQuality are all classes that have only one job.
 

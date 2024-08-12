@@ -1,13 +1,7 @@
 
-[Problem_Statement_and_Requirements.pdf](https://github.com/user-attachments/files/16577087/Problem_Statement_and_Requirements.pdf)
 
+![problemstatementandrequirements](https://github.com/user-attachments/assets/7aeed7f8-8f78-473a-8de9-78314930ed52)
 
-
-[Non_Functional_Requirements.pdf](https://github.com/user-attachments/files/16577089/Non_Functional_Requirements.pdf)
-
-
-
-![problemstatementandrequirements](https://github.com/user-attachments/assets/f78d2fe0-94e5-425b-8e6e-c2faa661930c)
 
 ![nonfunctionalrequirements](https://github.com/user-attachments/assets/a866acc7-5299-4ff7-892e-825c2861c27b)
 

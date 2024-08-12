@@ -6,12 +6,10 @@
 [Non_Functional_Requirements.pdf](https://github.com/user-attachments/files/16577089/Non_Functional_Requirements.pdf)
 
 
-[Problem_Statement_and_Requirements.docx](https://github.com/user-attachments/files/16577228/Problem_Statement_and_Requirements.docx)
 
+![problemstatementandrequirements](https://github.com/user-attachments/assets/f78d2fe0-94e5-425b-8e6e-c2faa661930c)
 
-[Non_Functional_Requirements.docx](https://github.com/user-attachments/files/16577222/Non_Functional_Requirements.docx)
-
-
+![nonfunctionalrequirements](https://github.com/user-attachments/assets/a866acc7-5299-4ff7-892e-825c2861c27b)
 
  
 Use Case Diagram

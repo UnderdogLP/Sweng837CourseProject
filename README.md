@@ -214,3 +214,5 @@ I: A client should never be forced to implement an interface that it doesn’t u
 
 D: Entities must depend on abstractions, not on concretions. It states that the high-level module must not depend on the low-level module, but they should depend on abstractions. For my project, the database connection interface, waterQuality, airQuality, and forestQuality do not depend on each other.
 
+Video Link: https://drive.google.com/drive/folders/1zlZ90dCbod4WKSIP2YuGGltK4TNj6OOC?usp=sharing
+Located in the Google Drive Folder. 
